@@ -594,7 +594,10 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
-
+  ;; 自定义启动窗口大小
+  ;; 设置启动窗口的大小和位置
+  (add-to-list 'default-frame-alist '(width . 120))   ;; 宽度 120 列
+  (add-to-list 'default-frame-alist '(height . 40))   ;; 高度 40 行
   (setq display-time-default-load-average nil)  ;; 禁用系统负载显示
   (display-time-mode 1)  ;; 启用时间显示
   )
