@@ -594,6 +594,9 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+
+  (setq display-time-default-load-average nil)  ;; 禁用系统负载显示
+  (display-time-mode 1)  ;; 启用时间显示
   )
 
 
