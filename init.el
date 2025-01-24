@@ -594,6 +594,8 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  ;; 启用外部ls
+  (setq ls-lisp-use-insert-directory-program t)
   ;; 自定义启动窗口大小
   ;; 设置启动窗口的大小和位置
   (add-to-list 'default-frame-alist '(width . 120))   ;; 宽度 120 列
