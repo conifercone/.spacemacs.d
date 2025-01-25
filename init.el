@@ -32,7 +32,8 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(markdown
+   '(html
+     (markdown :variables markdown-live-preview-engine 'vmd)
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
@@ -594,6 +595,8 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  ;; 指定markdown指令为pandoc
+  (setq markdown-command "pandoc")
   ;; 启用外部ls
   (setq ls-lisp-use-insert-directory-program t)
   ;; 自定义启动窗口大小
