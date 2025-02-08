@@ -594,6 +594,8 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  (setq url-http-proxy "http://127.0.0.1")  ;; 设置代理地址
+  (setq url-http-proxy-port 1080)  ;; 设置代理端口
   ;; 启用外部ls
   (setq ls-lisp-use-insert-directory-program t)
   ;; 自定义启动窗口大小
