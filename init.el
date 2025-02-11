@@ -1,3 +1,4 @@
+@@ -0,0 +1,601 @@
 ;; -*- mode: emacs-lisp; lexical-binding: t -*-
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
@@ -376,7 +377,7 @@ It should only modify the values of Spacemacs settings."
    ;; If non-nil the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default t) (Emacs 24.4+ only)
-   dotspacemacs-maximized-at-startup nil
+   dotspacemacs-maximized-at-startup t
 
    ;; If non-nil the frame is undecorated when Emacs starts up. Combine this
    ;; variable with `dotspacemacs-maximized-at-startup' to obtain fullscreen
@@ -594,16 +595,6 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
-  (setq url-http-proxy "http://127.0.0.1")  ;; 设置代理地址
-  (setq url-http-proxy-port 1080)  ;; 设置代理端口
-  ;; 启用外部ls
-  (setq ls-lisp-use-insert-directory-program t)
-  ;; 自定义启动窗口大小
-  ;; 设置启动窗口的大小和位置
-  (add-to-list 'default-frame-alist '(width . 120))   ;; 宽度 120 列
-  (add-to-list 'default-frame-alist '(height . 40))   ;; 高度 40 行
-  (setq display-time-default-load-average nil)  ;; 禁用系统负载显示
-  (display-time-mode 1)  ;; 启用时间显示
   )
 
 
