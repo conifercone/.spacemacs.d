@@ -416,7 +416,10 @@ It should only modify the values of Spacemacs settings."
    ;;   :size-limit-kb 1000)
    ;; When used in a plist, `visual' takes precedence over `relative'.
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers '(:relative t
+                                         :disabled-for-modes doc-view-mode pdf-view-mode
+                                         :size-limit-kb 1000
+                                         )
 
    ;; Code folding method. Possible values are `evil', `origami' and `vimish'.
    ;; (default 'evil)
@@ -613,7 +616,7 @@ This function is called at the very end of Spacemacs initialization."
                           skewer-mode space-doc spaceline spacemacs-purpose-popwin
                           spacemacs-whitespace-cleanup string-edit-at-point
                           string-inflection symbol-overlay symon term-cursor tern
-                          toc-org treemacs-evil treemacs-icons-dired
+                          tide toc-org treemacs-evil treemacs-icons-dired
                           treemacs-persp treemacs-projectile typescript-mode
                           undo-fu undo-fu-session uuidgen vi-tilde-fringe
                           volatile-highlights vundo web-beautify web-mode wgrep
