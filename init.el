@@ -32,7 +32,8 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(javascript
+   '(typescript
+     javascript
      yaml
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
@@ -442,7 +443,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; If non-nil, start an Emacs server if one is not already running.
    ;; (default nil)
-   dotspacemacs-enable-server nil
+   dotspacemacs-enable-server t
 
    ;; Set the emacs server socket location.
    ;; If nil, uses whatever the Emacs default is, otherwise a directory path
@@ -576,51 +577,51 @@ before packages are loaded."
 This is an auto-generated function, do not modify its content directly, use
 Emacs customize menu instead.
 This function is called at the very end of Spacemacs initialization."
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(ace-jump-helm-line ace-link add-node-modules-path aggressive-indent
-                        all-the-icons auto-compile auto-highlight-symbol
-                        centered-cursor-mode clean-aindent-mode
-                        column-enforce-mode company define-word devdocs diminish
-                        dired-quick-sort disable-mouse dotenv-mode drag-stuff
-                        dumb-jump elisp-def elisp-demos elisp-slime-nav emr
-                        eval-sexp-fu evil-anzu evil-args evil-cleverparens
-                        evil-collection evil-easymotion evil-escape
-                        evil-evilified-state evil-exchange evil-goggles
-                        evil-iedit-state evil-indent-plus evil-lion
-                        evil-lisp-state evil-matchit evil-mc evil-nerd-commenter
-                        evil-numbers evil-surround evil-textobj-line evil-tutor
-                        evil-unimpaired evil-visual-mark-mode evil-visualstar
-                        expand-region eyebrowse fancy-battery flycheck ggtags
-                        golden-ratio google-translate grizzl helm-ag helm-comint
-                        helm-descbinds helm-make helm-mode-manager helm-org
-                        helm-projectile helm-purpose helm-swoop helm-themes
-                        helm-xref hide-comnt highlight-indentation
-                        highlight-numbers highlight-parentheses hl-todo
-                        holy-mode htmlize hungry-delete hybrid-mode
-                        impatient-mode import-js indent-guide info+ inspector
-                        js-doc js2-mode js2-refactor link-hint livid-mode
-                        lorem-ipsum lsp-mode macrostep markdown-mode multi-line
-                        multiple-cursors nameless nerd-icons nodejs-repl
-                        npm-mode open-junk-file org-superstar overseer paradox
-                        password-generator pcre2el popwin prettier-js quickrun
-                        rainbow-delimiters restart-emacs simple-httpd
-                        skewer-mode space-doc spaceline spacemacs-purpose-popwin
-                        spacemacs-whitespace-cleanup string-edit-at-point
-                        string-inflection symbol-overlay symon term-cursor tern
-                        toc-org treemacs-evil treemacs-icons-dired
-                        treemacs-persp treemacs-projectile undo-fu
-                        undo-fu-session uuidgen vi-tilde-fringe
-                        volatile-highlights vundo web-beautify wgrep winum
-                        writeroom-mode ws-butler yaml yaml-mode yasnippet)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-)
+  (custom-set-variables
+   ;; custom-set-variables was added by Custom.
+   ;; If you edit it by hand, you could mess it up, so be careful.
+   ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+   '(package-selected-packages
+     '(ace-jump-helm-line ace-link add-node-modules-path aggressive-indent
+                          all-the-icons auto-compile auto-highlight-symbol
+                          centered-cursor-mode clean-aindent-mode
+                          column-enforce-mode company define-word devdocs diminish
+                          dired-quick-sort disable-mouse dotenv-mode drag-stuff
+                          dumb-jump elisp-def elisp-demos elisp-slime-nav
+                          emmet-mode emr eval-sexp-fu evil-anzu evil-args
+                          evil-cleverparens evil-collection evil-easymotion
+                          evil-escape evil-evilified-state evil-exchange
+                          evil-goggles evil-iedit-state evil-indent-plus evil-lion
+                          evil-lisp-state evil-matchit evil-mc evil-nerd-commenter
+                          evil-numbers evil-surround evil-textobj-line evil-tutor
+                          evil-unimpaired evil-visual-mark-mode evil-visualstar
+                          expand-region eyebrowse fancy-battery flycheck ggtags
+                          golden-ratio google-translate grizzl helm-ag helm-comint
+                          helm-descbinds helm-make helm-mode-manager helm-org
+                          helm-projectile helm-purpose helm-swoop helm-themes
+                          helm-xref hide-comnt highlight-indentation
+                          highlight-numbers highlight-parentheses hl-todo
+                          holy-mode htmlize hungry-delete hybrid-mode
+                          impatient-mode import-js indent-guide info+ inspector
+                          js-doc js2-mode js2-refactor link-hint livid-mode
+                          lorem-ipsum lsp-mode macrostep markdown-mode multi-line
+                          multiple-cursors nameless nerd-icons nodejs-repl
+                          npm-mode open-junk-file org-superstar overseer paradox
+                          password-generator pcre2el popwin prettier-js quickrun
+                          rainbow-delimiters restart-emacs simple-httpd
+                          skewer-mode space-doc spaceline spacemacs-purpose-popwin
+                          spacemacs-whitespace-cleanup string-edit-at-point
+                          string-inflection symbol-overlay symon term-cursor tern
+                          toc-org treemacs-evil treemacs-icons-dired
+                          treemacs-persp treemacs-projectile typescript-mode
+                          undo-fu undo-fu-session uuidgen vi-tilde-fringe
+                          volatile-highlights vundo web-beautify web-mode wgrep
+                          winum writeroom-mode ws-butler yaml yaml-mode yasnippet)))
+  (custom-set-faces
+   ;; custom-set-faces was added by Custom.
+   ;; If you edit it by hand, you could mess it up, so be careful.
+   ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+   )
+  )
