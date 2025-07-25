@@ -48,7 +48,7 @@ This function should only modify configuration layer settings."
      emacs-lisp
      ;; git
      helm
-     ;; lsp
+     lsp
      ;; markdown
      multiple-cursors
      ;; org
@@ -605,7 +605,8 @@ This function is called at the very end of Spacemacs initialization."
                           evil-lisp-state evil-matchit evil-mc evil-nerd-commenter
                           evil-numbers evil-surround evil-textobj-line evil-tutor
                           evil-unimpaired evil-visual-mark-mode evil-visualstar
-                          expand-region eyebrowse fancy-battery flycheck ggtags
+                          expand-region eyebrowse fancy-battery flycheck
+                          flycheck-elsa flycheck-package flycheck-pos-tip ggtags
                           golden-ratio google-translate grizzl helm-ag helm-comint
                           helm-descbinds helm-make helm-mode-manager helm-org
                           helm-projectile helm-purpose helm-swoop helm-themes
@@ -616,10 +617,11 @@ This function is called at the very end of Spacemacs initialization."
                           js-doc js2-mode js2-refactor link-hint livid-mode
                           lorem-ipsum lsp-mode macrostep markdown-mode multi-line
                           multiple-cursors nameless nerd-icons nodejs-repl
-                          npm-mode open-junk-file org-superstar overseer paradox
-                          password-generator pcre2el popwin prettier-js quickrun
-                          rainbow-delimiters restart-emacs simple-httpd
-                          skewer-mode space-doc spaceline spacemacs-purpose-popwin
+                          npm-mode open-junk-file org-superstar overseer
+                          package-lint paradox password-generator pcre2el popwin
+                          pos-tip prettier-js quickrun rainbow-delimiters
+                          restart-emacs simple-httpd skewer-mode space-doc
+                          spaceline spacemacs-purpose-popwin
                           spacemacs-whitespace-cleanup string-edit-at-point
                           string-inflection symbol-overlay symon term-cursor tern
                           tide toc-org treemacs-evil treemacs-icons-dired
