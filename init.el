@@ -34,6 +34,9 @@ This function should only modify configuration layer settings."
    dotspacemacs-configuration-layers
    '(typescript
      javascript
+     rust
+     auto-completion
+     dap
      yaml
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
