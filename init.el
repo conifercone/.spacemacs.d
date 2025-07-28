@@ -32,9 +32,7 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(rust
-     auto-completion
-     dap
+   '(auto-completion
      yaml
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
