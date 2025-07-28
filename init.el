@@ -32,9 +32,7 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(typescript
-     javascript
-     rust
+   '(rust
      auto-completion
      dap
      yaml
@@ -52,9 +50,9 @@ This function should only modify configuration layer settings."
      ;; markdown
      multiple-cursors
      ;; org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
@@ -235,7 +233,7 @@ It should only modify the values of Spacemacs settings."
    ;; fixed-pitch faces. The `:size' can be specified as
    ;; a non-negative integer (pixel size), or a floating-point (point size).
    ;; Point size is recommended, because it's device independent. (default 10.0)
-   dotspacemacs-default-font '("JetBrains Mono"
+   dotspacemacs-default-font '("JetBrainsMono NF"
                                :size 10.0
                                :weight normal
                                :width normal)
