@@ -601,9 +601,9 @@ This function is called at the very end of Spacemacs initialization."
                           js-doc js2-mode js2-refactor link-hint livid-mode
                           lorem-ipsum lsp-mode macrostep markdown-mode multi-line
                           multiple-cursors nameless nerd-icons nodejs-repl
-                          npm-mode open-junk-file org-superstar overseer
-                          package-lint paradox password-generator pcre2el popwin
-                          pos-tip prettier-js quickrun rainbow-delimiters
+                          npm-mode open-junk-file org-contrib org-superstar
+                          overseer package-lint paradox password-generator pcre2el
+                          popwin pos-tip prettier-js quickrun rainbow-delimiters
                           restart-emacs simple-httpd skewer-mode space-doc
                           spaceline spacemacs-purpose-popwin
                           spacemacs-whitespace-cleanup string-edit-at-point
