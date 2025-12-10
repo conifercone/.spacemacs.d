@@ -556,7 +556,7 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   ;; 设置中文字体
-  (set-fontset-font t '(#x2ff0 . #x9ffc) (font-spec :family "霞鹜文楷等宽" :size 13 :weight 'normal))
+  (set-fontset-font t '(#x2ff0 . #x9ffc) (font-spec :family "霞鹜新晰黑" :size 13 :weight 'normal))
   ;; 使用外部ls
   (setq ls-lisp-use-insert-directory-program t)
   (setq insert-directory-program "C:/Users/kaiyu/scoop/apps/msys2/current/usr/bin/ls.exe")
