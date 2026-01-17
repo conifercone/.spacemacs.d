@@ -32,13 +32,22 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(auto-completion
+   '(toml
+     auto-completion
      yaml
      emacs-lisp
      helm
      lsp
      multiple-cursors
      org
+     (python :variables
+             python-enable-tools '(uv)
+             python-backend 'lsp
+             python-lsp-server 'pyright
+             python-formatter 'ruff
+             python-formart-on-save t
+             python-save-before-test nil
+             )
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
@@ -608,11 +617,12 @@ This function is called at the very end of Spacemacs initialization."
                           spaceline spacemacs-purpose-popwin
                           spacemacs-whitespace-cleanup string-edit-at-point
                           string-inflection symbol-overlay symon term-cursor tern
-                          tide toc-org treemacs-evil treemacs-icons-dired
-                          treemacs-persp treemacs-projectile typescript-mode
-                          undo-fu undo-fu-session uuidgen vi-tilde-fringe
-                          volatile-highlights vundo web-beautify web-mode wgrep
-                          winum writeroom-mode ws-butler yaml yaml-mode yasnippet)))
+                          tide toc-org toml-mode treemacs-evil
+                          treemacs-icons-dired treemacs-persp treemacs-projectile
+                          typescript-mode undo-fu undo-fu-session uuidgen
+                          vi-tilde-fringe volatile-highlights vundo web-beautify
+                          web-mode wgrep winum writeroom-mode ws-butler yaml
+                          yaml-mode yasnippet)))
   (custom-set-faces
    ;; custom-set-faces was added by Custom.
    ;; If you edit it by hand, you could mess it up, so be careful.
